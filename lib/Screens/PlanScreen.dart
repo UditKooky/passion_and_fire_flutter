@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:passion_and_fire_flutter/Components/CustomButton.dart';
+import 'package:passion_and_fire_flutter/Screens/BottomBar.dart';
 import 'package:passion_and_fire_flutter/utils/colors.dart';
 import 'package:passion_and_fire_flutter/utils/images.dart';
 
@@ -200,7 +202,11 @@ class _PlanScreenState extends State<PlanScreen> {
                   ),
                 ):SizedBox(),
                 Spacer(),
-                CustomButton(texttitle: "Subscribe",height: height*0.065,width: width*0.9,),
+                GestureDetector(
+                    onTap: (){
+                      Get.to(()=>BottomBar());
+                    },
+                    child: CustomButton(texttitle: "Subscribe",height: height*0.065,width: width*0.9,)),
                 SizedBox(height: 50,),
               ],
             )
