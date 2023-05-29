@@ -23,3 +23,7 @@ String photo1 = "assets/images/photo1.png";
 String photoresize = "assets/images/photoresize.png";
 String book = "assets/images/book.png";
 String image1 = "assets/images/image1.png";
+String author = "assets/icons/author.jpg";
+String heart1 = "assets/icons/heart1.png";
+String comment = "assets/icons/comment.png";
+String heartcircle = "assets/icons/heartcircle.png";

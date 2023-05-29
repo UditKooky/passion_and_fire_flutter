@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:passion_and_fire_flutter/Components/CustomContainer.dart';
 import 'package:passion_and_fire_flutter/Screens/OnboardingScreen.dart';
 import 'package:passion_and_fire_flutter/utils/colors.dart';
 import 'package:passion_and_fire_flutter/utils/images.dart';

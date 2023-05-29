@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       child: Text("More",
-                        style: TextStyle(color: Colors.blue,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       child: Text("More",
-                        style: TextStyle(color: Colors.blue,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       child: Text("More",
-                        style: TextStyle(color: Colors.blue,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
@@ -181,17 +181,23 @@ class _HomePageState extends State<HomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context,index){
                         return Container(
-                          margin: EdgeInsets.only(left: 15,right: 10),
+                          margin: EdgeInsets.only(left: 15,right: 15),
                           width: width*0.35,
                           decoration: BoxDecoration(color:Colors.black),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              SizedBox(height: 20,),
-                              Image.asset(book,scale: 2),
-                              SizedBox(height: 10,),
+                              Container(
+                                margin: EdgeInsets.all(10),
+                                height: height*0.14,
+                                width: width*0.2,
+                                color: Colors.white,
+                              ),
                               Text("Loved.",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
-                              SizedBox(height: 10,),
+                              SizedBox(height: 5,),
                               Text("Chara Presley",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),),
+                              SizedBox(height: 10,),
                             ],
                           ),
                         );
@@ -210,7 +216,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       child: Text("More",
-                        style: TextStyle(color: Colors.blue,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
