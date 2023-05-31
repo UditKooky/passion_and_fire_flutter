@@ -12,4 +12,5 @@ const titleColor = Color(0xFF3A6B88);
 const tabtextColor = Color(0xFF2C4352);
 const tabtext1Color = Color(0xFF12232E);
 const tabtext2Color = Color(0xFF2D536A);
+const tabtext3Color = Color(0xFF987AEE);
 

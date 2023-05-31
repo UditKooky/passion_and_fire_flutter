@@ -58,13 +58,13 @@ class _NotificationScreenState extends State<NotificationScreen> {
                       children: [
                         SizedBox(height: 20,),
                         Text("Authorname just publish a new book",
-                          style: TextStyle(color: whiteColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                          style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                         SizedBox(height: 10,),
                         Container(
                   width: width*0.6,
                   child: Text("Lorem ipsum dolor sit amet, consectetur "
                       "adipiscing elit, sed do eiusmod tempor Readmore...",
-                    style: TextStyle(color: textColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                    style: TextStyle(color: textColor,fontSize: 16,fontWeight: FontWeight.bold),),
                 ),
 
 
@@ -96,13 +96,13 @@ class _NotificationScreenState extends State<NotificationScreen> {
                       children: [
                         SizedBox(height: 20,),
                         Text("Authorname just publish a new book",
-                          style: TextStyle(color: whiteColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                          style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                         SizedBox(height: 10,),
                         Container(
                           width: width*0.6,
                           child: Text("Lorem ipsum dolor sit amet, consectetur "
                               "adipiscing elit, sed do eiusmod tempor Readmore...",
-                            style: TextStyle(color: textColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                            style: TextStyle(color: textColor,fontSize: 16,fontWeight: FontWeight.bold),),
                         ),
 
 
@@ -129,13 +129,13 @@ class _NotificationScreenState extends State<NotificationScreen> {
                       children: [
                         SizedBox(height: 20,),
                         Text("Authorname just publish a new book",
-                          style: TextStyle(color: whiteColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                          style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                         SizedBox(height: 10,),
                         Container(
                           width: width*0.6,
                           child: Text("Lorem ipsum dolor sit amet, consectetur "
                               "adipiscing elit, sed do eiusmod tempor Readmore...",
-                            style: TextStyle(color: textColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                            style: TextStyle(color: textColor,fontSize: 16,fontWeight: FontWeight.bold),),
                         ),
 
 

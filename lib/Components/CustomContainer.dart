@@ -12,31 +12,28 @@ class _CustomContainerState extends State<CustomContainer> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      body: Center(
+    return Center(
+      child: Container(
+        height: size.height*0.26,
+        width: size.width*0.40,
+        margin: EdgeInsets.only(left: 10,right: 10),
+        decoration: BoxDecoration(image: DecorationImage(image: AssetImage(author),fit: BoxFit.cover),
+          borderRadius: BorderRadius.circular(20),),
         child: Container(
-          height: size.height*0.28,
-          width: size.width*0.40,
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(author),fit: BoxFit.cover),
-              borderRadius: BorderRadius.circular(20),),
-          child: Container(
-            alignment: Alignment.bottomCenter,
-            height: size.height*0.28,
-            width: size.width*0.40,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),gradient: LinearGradient( begin: Alignment.topCenter,
-              transform: GradientRotation(double.maxFinite),
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.black.withOpacity(0.8),
-                    Colors.black.withOpacity(0.3),
+          alignment: Alignment.bottomCenter,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),gradient: LinearGradient( begin: Alignment.topCenter,
+            transform: GradientRotation(double.maxFinite),
+            end: Alignment.bottomCenter,
+            colors: [
+              Colors.black.withOpacity(0.8),
+              Colors.black.withOpacity(0.3),
               Colors.white.withOpacity(0.2)
-                  ],)),
-            child: Container(
-                margin: EdgeInsets.all(15),
-                child: Text("LIFE",style: TextStyle(color: Colors.white,fontSize: 18),)),
+            ],)),
+          child: Container(
+              margin: EdgeInsets.all(15),
+              child: Text("LIFE",style: TextStyle(color: Colors.white,fontSize: 18),)),
 
-          ),
         ),
       ),
     );

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:passion_and_fire_flutter/Components/BooksContainer.dart';
+import 'package:passion_and_fire_flutter/Components/CustomContainer.dart';
+import 'package:passion_and_fire_flutter/Components/CustomContainer1.dart';
 import 'package:passion_and_fire_flutter/Components/CustomTextFormField.dart';
 import 'package:passion_and_fire_flutter/utils/colors.dart';
 import 'package:passion_and_fire_flutter/utils/images.dart';
@@ -17,23 +20,13 @@ class _CategoryState extends State<Category> {
     return Column(
       children: [
         Container(
-          height: height*0.25,
-          margin: EdgeInsets.only(top: 10),
-          color: primaryColor,
+          height: height*0.3,
           child: ListView.builder(
-              itemCount: 3,
+              itemCount: 6,
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context,index){
-                return Container(
-                  height: height*0.5,
-                  margin: EdgeInsets.only(left: 15,right: 10,top: 15,bottom: 15),
-                  width: width*0.3,
-                  decoration: BoxDecoration(color:Colors.white,borderRadius: BorderRadius.circular(20)),
-                  child: Column(
-                    children: [
-                    ],
-                  ),
+                return CustomContainer(
                 );
               }),
         ),
@@ -105,6 +98,18 @@ class _CategoryState extends State<Category> {
             ],
           ),
         ),
+        SizedBox(height: 10,),
+        Container(
+          height: height*0.25,
+          child: ListView.builder(
+              itemCount: 6,
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context,index){
+                return CustomContainer1(
+                );
+              }),
+        ),
       ],
     );
   }
@@ -125,19 +130,19 @@ class _CategoryState extends State<Category> {
                   width: 80,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: whiteColor),
                   child:Center(child: Text("Trending",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),))),
-              SizedBox(width: 15,),
+              SizedBox(width: 10,),
               Container(
                   height: 30,
                   width: 80,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: tabtext2Color),
                   child:Center(child: Text("Latest",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
-              SizedBox(width: 15,),
+              SizedBox(width: 10,),
               Container(
                   height: 30,
                   width: 80,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: tabtext2Color),
                   child:Center(child: Text("For you",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
-              SizedBox(width: 15,),
+              SizedBox(width: 10,),
               Container(
                   height: 30,
                   width: 80,
@@ -155,25 +160,14 @@ class _CategoryState extends State<Category> {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context,index){
                 return Container(
-                  margin: EdgeInsets.only(left: 15,right: 15),
-                  width: width*0.35,
-                  decoration: BoxDecoration(color:Colors.black),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.all(10),
-                        height: height*0.14,
-                        width: width*0.2,
-                        color: Colors.white,
-                      ),
-                      Text("Loved.",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
-                      SizedBox(height: 5,),
-                      Text("Chara Presley",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),),
-                      SizedBox(height: 10,),
-                    ],
-                  ),
+                  height: height*0.25,
+                  child: ListView.builder(
+                      itemCount: 6,
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context,index){
+                        return BooksContainer();
+                      }),
                 );
               }),
         ),
@@ -182,27 +176,7 @@ class _CategoryState extends State<Category> {
             margin: EdgeInsets.only(left: 20),
             child: Text("Recent",style: TextStyle(color: whiteColor,fontSize:25,fontWeight: FontWeight.bold),)),
         SizedBox(height: 10,),
-        Container(
-          margin: EdgeInsets.only(left: 15),
-          height: height*0.25,
-          width: width*0.35,
-          decoration: BoxDecoration(color:Colors.black),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                height: height*0.15,
-                width: width*0.25,
-                color: Colors.white,
-              ),
-              Text("Loved.",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
-              SizedBox(height: 5,),
-              Text("Chara Presley",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),),
-              SizedBox(height: 10,),
-            ],
-          ),
-        ),
+        BooksContainer(),
       ],
     );
   }
@@ -225,7 +199,8 @@ class _CategoryState extends State<Category> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       Container(
-                        child: TabBar(
+                        child:
+                        TabBar(
                           labelColor: whiteColor,
                           labelStyle: TextStyle(color:whiteColor,fontSize: 16,fontWeight: FontWeight.bold),
                           unselectedLabelColor: tabtextColor,
@@ -251,9 +226,6 @@ class _CategoryState extends State<Category> {
                             ),
                           ]))
                     ])),
-            
-
-
 
           ],
         ),

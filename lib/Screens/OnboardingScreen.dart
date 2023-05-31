@@ -31,7 +31,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             Image.asset(mainLogo,scale: 2.5,),
             Spacer(),
             Image.asset(mainLogo,scale:4.5,),
-            SizedBox(height: 10,),
+            SizedBox(height: 15,),
             Container(
               margin: EdgeInsets.only(left: 10),
               height: height*0.06,
@@ -52,17 +52,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ],
               ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 15,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text("have an account?",style: TextStyle(color: whiteColor,fontSize: 18),),
+                Text("have an account? ",style: TextStyle(color: whiteColor,fontSize: 16),),
                 GestureDetector(
                     onTap: (){
                       Get.to(()=>SigninScreen());
                     },
-                    child: Text("Sign in",style: TextStyle(color: Colors.blue,fontSize: 18),)),
+                    child: Text("Sign in",style: TextStyle(color: Colors.blue,fontSize: 16),)),
               ],
             ),
             SizedBox(height: 30,),

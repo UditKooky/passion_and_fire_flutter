@@ -31,9 +31,13 @@ class _PlanScreenState extends State<PlanScreen> {
               children: [
                 SizedBox(height: 40),
                 Image.asset(mainLogo,scale: 2.5,),
-                Container(
-                    margin: EdgeInsets.only(right: 140,top: 50),
-                    child: Text("SELECT SUBCRIPTION",style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),)),
+                SizedBox(height: 50,),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Container(
+                    margin: EdgeInsets.only(left: 10),
+                      child: Text("SELECT SUBCRIPTION",style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),)),
+                ),
                 Container(
                   margin: EdgeInsets.only(right: 210,top: 5),
                   height: height*0.002,
@@ -57,7 +61,7 @@ class _PlanScreenState extends State<PlanScreen> {
                         width: width*0.25,
                         decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(8)),
                         child: Center(
-                            child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),)),
+                            child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),)),
                       ),
                       Container(
                           margin: EdgeInsets.only(left: 40,top: 20),
@@ -83,31 +87,35 @@ class _PlanScreenState extends State<PlanScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 20,top: 20),
-                            height: height*0.045,
+                            margin: EdgeInsets.only(left: 20,top: 10),
+                            height: height*0.046,
                             width: width*0.25,
                             decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(8)),
                             child: Center(
-                                child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),)),
+                                child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),)),
                           ),
                           Container(
-                            margin: EdgeInsets.only(left: 20,top: 30),
+                            margin: EdgeInsets.only(left: 20,top: 20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Text("View details",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                                  Text("View details",style: TextStyle(color:whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                                   Icon(Icons.keyboard_arrow_down,color: whiteColor,)
                                 ],
                               )),
 
                         ],
                       ),
-                      SizedBox(height: 20,),
+                      SizedBox(height: 15,),
                       Container(
                         margin: EdgeInsets.only(left: 15,right: 15),
                         width: width*0.80,
-                          child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet metus a lorem sagittis eleifend. Sed eu ligula interdum risus elementum semper ut sed ligula. Etiam pharetra semper nunc vel consequat. Suspendisse orci purus,",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),)),
+                          child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                              "Duis sit amet metus a lorem sagittis eleifend. "
+                              "Sed eu ligula interdum risus elementum semper ut sed ligula. "
+                              "Etiam pharetra semper nunc vel consequat. Suspendisse orci purus,"
+                            ,style: TextStyle(color:whiteColor,fontSize: 14,fontWeight: FontWeight.bold),)),
                     ],
                   ),
                 ):SizedBox(),
@@ -142,15 +150,15 @@ class _PlanScreenState extends State<PlanScreen> {
                   child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 20,top: 20),
+                        margin: EdgeInsets.only(left: 20,top: 10),
                         height: height*0.045,
                         width: width*0.25,
                         decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(8)),
                         child: Center(
-                            child: Text("PLAN B",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),)),
+                            child: Text("PLAN B",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),)),
                       ),
                       Container(
-                          margin: EdgeInsets.only(left: 40,top: 20),
+                          margin: EdgeInsets.only(left: 40,top: 10),
                           child: Row(
                             children: [
                               Text("View details",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),),
@@ -173,20 +181,20 @@ class _PlanScreenState extends State<PlanScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 20,top: 20),
+                            margin: EdgeInsets.only(left: 20,top: 10),
                             height: height*0.045,
                             width: width*0.25,
                             decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(8)),
                             child: Center(
-                                child: Text("PLAN B",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),)),
+                                child: Text("PLAN B",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),)),
                           ),
                           Container(
-                              margin: EdgeInsets.only(left: 20,top: 30),
+                              margin: EdgeInsets.only(left: 20,top: 20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Text("View details",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                                  Text("View details",style: TextStyle(color:whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                                   Icon(Icons.keyboard_arrow_down,color: whiteColor,)
                                 ],
                               )),
@@ -197,7 +205,10 @@ class _PlanScreenState extends State<PlanScreen> {
                       Container(
                           margin: EdgeInsets.only(left: 15,right: 15),
                           width: width*0.80,
-                          child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet metus a lorem sagittis eleifend. Sed eu ligula interdum risus elementum semper ut sed ligula. Etiam pharetra semper nunc vel consequat. Suspendisse orci purus,",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),)),
+                          child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                              "Duis sit amet metus a lorem sagittis eleifend. Sed eu ligula interdum "
+                              "risus elementum semper ut sed ligula. Etiam pharetra semper nunc vel consequat. "
+                              "Suspendisse orci purus,",style: TextStyle(color:whiteColor,fontSize: 14,fontWeight: FontWeight.bold),)),
                     ],
                   ),
                 ):SizedBox(),
@@ -206,7 +217,7 @@ class _PlanScreenState extends State<PlanScreen> {
                     onTap: (){
                       Get.to(()=>BottomBar());
                     },
-                    child: CustomButton(texttitle: "Subscribe",height: height*0.065,width: width*0.9,)),
+                    child: CustomButton(texttitle: "Subscribe",height: height*0.06,width: width*0.85,)),
                 SizedBox(height: 50,),
               ],
             )

@@ -15,13 +15,14 @@ class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(left: 20,right: 20),
       height:widget.height==null? 50:widget.height,
-      width:widget.width==null? 100:widget.width,
+      width:widget.width==null? 80:widget.width,
       alignment: Alignment.center,
       decoration: BoxDecoration(
           color:whiteColor,
           borderRadius: BorderRadius.circular(widget.height==null? 30:(widget.height)/2)),
-      child: Text("${widget.texttitle}",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+      child: Text("${widget.texttitle}",style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
     );
   }
 }

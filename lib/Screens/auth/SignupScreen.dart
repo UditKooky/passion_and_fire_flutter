@@ -35,7 +35,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Image.asset(mainLogo,scale: 2.5,),
               Spacer(),
               Text("SIGN UP",style: TextStyle(color:whiteColor,
-                  fontSize: 30,fontWeight: FontWeight.bold),),
+                  fontSize: 25,fontWeight: FontWeight.bold),),
               Container(
                 margin: EdgeInsets.only(top: 5),
                 height: height*0.002,
@@ -46,7 +46,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Container(
                 margin: EdgeInsets.only(left: 35),
                   alignment: Alignment.topLeft,
-                  child: Text("Email address",style: TextStyle(color: Colors.white,fontSize:18,fontWeight: FontWeight.bold),)),
+                  child: Text("Email address",style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold),)),
               SizedBox(height: 10,),
               CustomTextFormField(controller: emailController, hintText: "Enter Your Email Address",isPassword: false,
               prefix:email,validator: (p0) => "Enter your Email"),
@@ -54,7 +54,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Container(
                   margin: EdgeInsets.only(left: 35),
                   alignment: Alignment.topLeft,
-                  child: Text("Password",style: TextStyle(color: Colors.white,fontSize:18,fontWeight: FontWeight.bold),)),
+                  child: Text("Password",style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold),)),
               SizedBox(height: 10,),
               CustomTextFormField(controller: passwordController, hintText: "Enter Your Password",isPassword: true,
                   prefix:key,validator: (p0) => "Enter your Password",suffix:eye),
@@ -62,12 +62,12 @@ class _SignupScreenState extends State<SignupScreen> {
               Container(
                   margin: EdgeInsets.only(left: 35),
                   alignment: Alignment.topLeft,
-                  child: Text("Confirm Password",style: TextStyle(color: Colors.white,fontSize:18,fontWeight: FontWeight.bold),)),
+                  child: Text("Confirm Password",style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold),)),
               SizedBox(height: 10,),
               CustomTextFormField(controller: confirmpasswordController, hintText: "Confirm Your Password",isPassword: true,
                   prefix:key,validator: (p0) => "Confirm Your Password",suffix:eye),
               SizedBox(height: 60,),
-              CustomButton(texttitle: "Sign up",height: height*0.06,width: width*0.9,),
+              CustomButton(texttitle: "Sign up",height: height*0.055,width: width*0.85,),
               SizedBox(height: 20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

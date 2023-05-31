@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:passion_and_fire_flutter/Components/BooksContainer.dart';
+import 'package:passion_and_fire_flutter/Components/CustomContainer.dart';
+import 'package:passion_and_fire_flutter/Components/CustomContainer1.dart';
+import 'package:passion_and_fire_flutter/Screens/DetailScreen.dart';
 import 'package:passion_and_fire_flutter/utils/colors.dart';
 import 'package:passion_and_fire_flutter/utils/images.dart';
 
@@ -10,19 +15,22 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  var height,width,size;
   @override
   Widget build(BuildContext context) {
-    var height,width,size;
     size = MediaQuery.of(context).size;
     height = size.height;
     width = size.width;
     return Scaffold(
+      backgroundColor: primaryColor,
       body: SingleChildScrollView(
-        child: Container(
-            height: height*1.3,
-            width: width,
-            decoration:BoxDecoration(image: DecorationImage(image: AssetImage(photo),fit: BoxFit.fill)),
-            child: Column(
+        child: Stack(
+          children: [
+            Container(
+              height: height,
+                width: width,
+                decoration: BoxDecoration(color:Colors.white,image: DecorationImage(image: AssetImage(photo),fit: BoxFit.cover)),),
+            Column(
               children: [
                 SizedBox(height: 30),
                 Row(
@@ -38,57 +46,57 @@ class _HomePageState extends State<HomePage> {
                 ),
                 SizedBox(height: 30),
                 Container(
-                  width: width,
+                  width: width*1,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        height: 30,
-                        width: 80,
+                          height: height*0.04,
+                          width: width*0.2,
                         decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
-                          child:Center(child: Text("Trending",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
-                      SizedBox(width: 15,),
+                          child:Center(child: Text("Trending",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
+                      SizedBox(width: 8,),
                       Container(
-                        height: 30,
-                        width: 80,
+                        height: height*0.04,
+                        width: width*0.2,
                         decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
-                          child:Center(child: Text("Latest",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
-                      SizedBox(width: 15,),
+                          child:Center(child: Text("Latest",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
+                      SizedBox(width: 8,),
                       Container(
-                        height: 30,
-                        width: 80,
+                          height: height*0.04,
+                          width: width*0.2,
                         decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
-                          child:Center(child: Text("For you",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
-                      SizedBox(width: 15,),
+                          child:Center(child: Text("For you",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
+                      SizedBox(width: 8,),
                       Container(
-                        height: 30,
-                        width: 80,
+                          height: height*0.04,
+                          width: width*0.2,
                         decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
-                          child:Center(child: Text("More",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
+                          child:Center(child: Text("More",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
                     ],
                   ),
                 ),
-                Spacer(),
+                SizedBox(height: height*0.35,),
                 Container(
-                    height: 30,
-                    width: 80,
+                    height: height*0.04,
+                    width: width*0.22,
                     decoration: BoxDecoration(color:whiteColor,border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(20)),
                     child:Row(
                       children: [
                         SizedBox(width: 10,),
                         Container(
-                          height: 8,
-                          width: 8,
+                          height: size.height*0.01,
+                          width: size.width*0.02,
                           decoration: BoxDecoration(color: primaryColor,borderRadius: BorderRadius.circular(20)),
                         ),
                         SizedBox(width: 5,),
-                        Center(child: Text("LATEST",style: TextStyle(color: primaryColor,fontSize: 16,fontWeight: FontWeight.bold),)),
+                        Center(child: Text("LATEST",style: TextStyle(color: primaryColor,fontSize: 14,fontWeight: FontWeight.bold),)),
                       ],
                     )),
                 SizedBox(height: 10),
                 Center(child: Text("GOD LIVES IN YOU",
-                  style: TextStyle(color: whiteColor,fontSize: 30,fontWeight: FontWeight.bold),)),
+                  style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),)),
                 SizedBox(height: 5),
                 Center(child: Text("Spirituality",
                   style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),)),
@@ -110,7 +118,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(left: 20),
                       child: Text("For You",
-                        style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 20),
@@ -119,7 +127,17 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
-                SizedBox(height: 20,),
+                Container(
+                  height: height*0.3,
+                  child: ListView.builder(
+                      itemCount: 6,
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context,index){
+                        return CustomContainer1(
+                        );
+                      }),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -127,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(left: 20),
                       child: Text("Categories",
-                        style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 20),
@@ -138,19 +156,17 @@ class _HomePageState extends State<HomePage> {
                 ),
                 SizedBox(height: 20,),
                 Container(
-                  height: height*0.2,
+                  height: height*0.3,
                   child: ListView.builder(
-                      itemCount: 3,
+                      itemCount: 6,
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context,index){
-                    return Container(
-                      margin: EdgeInsets.only(left: 15,right: 10),
-                      width: width*0.3,
-                      decoration: BoxDecoration(color:Colors.white,borderRadius: BorderRadius.circular(20)),
-                      child: Column(
-                        children: [
-                        ],
+                    return GestureDetector(
+                      onTap: (){
+                        Get.to(()=>DetailScreen());
+                      },
+                      child: CustomContainer(
                       ),
                     );
                   }),
@@ -163,7 +179,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(left: 20),
                       child: Text("books",
-                        style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 20),
@@ -174,33 +190,13 @@ class _HomePageState extends State<HomePage> {
                 ),
                 SizedBox(height: 20,),
                 Container(
-                  height: height*0.22,
+                  height: height*0.25,
                   child: ListView.builder(
                       itemCount: 3,
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context,index){
-                        return Container(
-                          margin: EdgeInsets.only(left: 15,right: 15),
-                          width: width*0.35,
-                          decoration: BoxDecoration(color:Colors.black),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                margin: EdgeInsets.all(10),
-                                height: height*0.14,
-                                width: width*0.2,
-                                color: Colors.white,
-                              ),
-                              Text("Loved.",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
-                              SizedBox(height: 5,),
-                              Text("Chara Presley",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),),
-                              SizedBox(height: 10,),
-                            ],
-                          ),
-                        );
+                        return BooksContainer();
                       }),
                 ),
                 SizedBox(height: 20,),
@@ -211,7 +207,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(left: 20),
                       child: Text("Topics",
-                        style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 20),
@@ -232,19 +228,22 @@ class _HomePageState extends State<HomePage> {
                           width: width*0.25,
                           child: Column(
                             children: [
-                              CircleAvatar(
-                                radius: 45,backgroundColor: whiteColor,
+                              Container(
+                                height: 80,
+                                width: 80,
+                                decoration: BoxDecoration(color:whiteColor,borderRadius: BorderRadius.circular(40),
+                                  image: DecorationImage(image: AssetImage(author),fit: BoxFit.cover),),
                               ),
                               SizedBox(height: 10,),
-                              Text("Marriage",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
-
+                              Text("Marriage",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),),
                             ],
                           ),
                         );
                       }),
                 ),
               ],
-            )
+            ),
+          ],
         ),
       ),
     );

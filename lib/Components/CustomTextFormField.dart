@@ -21,8 +21,10 @@ class CustomTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
-      padding: EdgeInsets.only(left: 15,right: 15),
+      height: size.height*0.07,
+      padding: EdgeInsets.only(left: 25,right: 25),
       child: Column(
         children: [
           TextFormField(
@@ -30,9 +32,10 @@ class CustomTextFormField extends StatelessWidget {
             obscureText: isPassword,
             validator: validator,
             decoration: InputDecoration(
+              contentPadding: EdgeInsets.zero,
               hintText: hintText,
-              hintStyle: TextStyle(color: Color(0xFFc7c7c7),),
-              prefixIcon: prefix != null ? Image.asset(prefix!,scale: 4,color: greyColor,) : null,
+              hintStyle: TextStyle(color: Color(0xFFc7c7c7),fontSize: 14),
+              prefixIcon: prefix != null ? Image.asset(prefix!,scale: 6,color: greyColor,) : null,
               suffixIcon: suffix != null ? Image.asset(suffix!,scale: 4,color: greyColor,) : null,
               filled: true,
               fillColor:secondaryColor,
