@@ -19,7 +19,7 @@ class _BooksContainerState extends State<BooksContainer> {
     return Container(
       margin: EdgeInsets.only(left: 15,right: 15),
       width: width*0.35,
-      decoration: BoxDecoration(color:Colors.black),
+      decoration: BoxDecoration(color:backgroundColor),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,

@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               height: height,
                 width: width,
-                decoration: BoxDecoration(color:Colors.white,image: DecorationImage(image: AssetImage(photo),fit: BoxFit.cover)),),
+                decoration: BoxDecoration(color:whiteColor,image: DecorationImage(image: AssetImage(photo),fit: BoxFit.cover)),),
             Column(
               children: [
                 SizedBox(height: 30),

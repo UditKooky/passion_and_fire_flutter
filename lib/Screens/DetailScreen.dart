@@ -123,7 +123,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         margin: EdgeInsets.only(right: 20,top: 55),
                         height: height*0.05,
                         width: width*0.25,
-                        decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.circular(15)),
+                        decoration: BoxDecoration(color:orangeColor,borderRadius: BorderRadius.circular(15)),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -146,7 +146,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   SizedBox(height: 20,),
                   Container(
                       margin: EdgeInsets.only(left:20,top: 15),
-                      width:size.width*0.6, child: Text("God lives within you",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),)),
+                      width:size.width*0.6, child: Text("God lives within you",style: TextStyle(color:whiteColor,fontSize: 30,fontWeight: FontWeight.bold),)),
                   SizedBox(height: 10,),
                   Container(
                       margin: EdgeInsets.only(left:20,top: 15),
@@ -164,7 +164,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                 labelColor: whiteColor,
                                 labelStyle: TextStyle(color:whiteColor,fontSize: 16,fontWeight: FontWeight.bold),
                                 unselectedLabelColor: titleColor,
-                                indicatorColor: Colors.white,
+                                indicatorColor: whiteColor,
                                 indicatorPadding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                                 tabs: [
                                   Tab(text: 'Description',),
@@ -218,7 +218,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     height: height*0.06,
                     width: width*0.5,
                     decoration: BoxDecoration(color:whiteColor,borderRadius: BorderRadius.circular(15)),
-                    child: Center(child: Text("Buy Now",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),)),
+                    child: Center(child: Text("Buy Now",style: TextStyle(color:backgroundColor,fontSize: 20,fontWeight: FontWeight.bold),)),
                   )
                 ],
               ),

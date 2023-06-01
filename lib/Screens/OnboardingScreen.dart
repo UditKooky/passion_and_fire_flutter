@@ -37,7 +37,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               height: height*0.06,
               width: width*0.65,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),border: Border.all(color: Colors.white,width: 2) ),
+                  borderRadius: BorderRadius.circular(30),border: Border.all(color:whiteColor,width: 2) ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -62,7 +62,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     onTap: (){
                       Get.to(()=>SigninScreen());
                     },
-                    child: Text("Sign in",style: TextStyle(color: Colors.blue,fontSize: 16),)),
+                    child: Text("Sign in",style: TextStyle(color:blueColor,fontSize: 16),)),
               ],
             ),
             SizedBox(height: 30,),

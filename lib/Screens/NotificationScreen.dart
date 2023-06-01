@@ -51,7 +51,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                     Container(
                       height: 60,
                       width: 40,
-                      color: Colors.red,
+                      color: redColor,
                     ),
                     SizedBox(width: 15,),
                     Column(
@@ -83,14 +83,14 @@ class _NotificationScreenState extends State<NotificationScreen> {
               Container(
                 height: height*0.16,
                 width: width,
-                decoration: BoxDecoration(color:primaryColor,border: Border.all(color: Colors.black,width: 0.5)),
+                decoration: BoxDecoration(color:primaryColor,border: Border.all(color:backgroundColor,width: 0.5)),
                 child: Row(
                   children: [
                     SizedBox(width: 30,),
                     Container(
                       height: 60,
                       width: 40,
-                      color: Colors.red,
+                      color:redColor,
                     ),
                     SizedBox(width: 15,),
                     Column(
@@ -117,15 +117,14 @@ class _NotificationScreenState extends State<NotificationScreen> {
               Container(
                 height: height*0.16,
                 width: width,
-                decoration: BoxDecoration(color:primaryColor,border: Border.all(color: Colors.black,width: 0.5)),
+                decoration: BoxDecoration(color:primaryColor,border: Border.all(color:backgroundColor,width: 0.5)),
                 child: Row(
-
                   children: [
                     SizedBox(width: 30,),
                     Container(
                       height: 60,
                       width: 40,
-                      color: Colors.red,
+                      color: redColor
                     ),
                     SizedBox(width: 15,),
                     Column(

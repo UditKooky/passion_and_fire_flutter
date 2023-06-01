@@ -26,9 +26,9 @@ class _CustomContainer1State extends State<CustomContainer1> {
             transform: GradientRotation(double.maxFinite),
             end: Alignment.bottomCenter,
             colors: [
-              Colors.black.withOpacity(0.8),
-              Colors.black.withOpacity(0.3),
-              Colors.white.withOpacity(0.2)
+              backgroundColor.withOpacity(0.8),
+              backgroundColor.withOpacity(0.3),
+              whiteColor.withOpacity(0.2)
             ],)),
           child: Column(
               children:[
@@ -40,10 +40,10 @@ class _CustomContainer1State extends State<CustomContainer1> {
                       children: [
                         Container(
                             margin: EdgeInsets.only(right:35,top: 15),
-                            width:size.width*0.18, child: Text("GOD LIVES IN YOU!",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),)),
+                            width:size.width*0.18, child: Text("GOD LIVES IN YOU!",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),)),
                         Container(
                             margin: EdgeInsets.only(left: 15,top: 15),
-                            width:size.width*0.3, child: Text("JOYCE HEYER",style: TextStyle(color: Colors.white,fontSize: 12,fontWeight: FontWeight.bold),)),
+                            width:size.width*0.3, child: Text("JOYCE HEYER",style: TextStyle(color:whiteColor,fontSize: 12,fontWeight: FontWeight.bold),)),
                       ],
                     ),
                     Row(
@@ -66,9 +66,9 @@ class _CustomContainer1State extends State<CustomContainer1> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text("34:52",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
+                      Text("34:52",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),),
                       SizedBox(width: 10,),
-                      Image.asset(music,scale: 4,),
+                      Image.asset(music,scale: 5,),
                     ],
                   ),
                 ),

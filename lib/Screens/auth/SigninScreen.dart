@@ -48,7 +48,7 @@ class _SigninScreenState extends State<SigninScreen> {
                 Container(
                     margin: EdgeInsets.only(left: 35),
                     alignment: Alignment.topLeft,
-                    child: Text("Email address",style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold),)),
+                    child: Text("Email address",style: TextStyle(color:whiteColor,fontSize:16,fontWeight: FontWeight.bold),)),
                 SizedBox(height: 10,),
                 CustomTextFormField(controller: emailController, hintText: "Enter Your Email Address",isPassword: false,
                     prefix:email,validator: (p0) => "Enter your Email"),
@@ -56,7 +56,7 @@ class _SigninScreenState extends State<SigninScreen> {
                 Container(
                     margin: EdgeInsets.only(left: 35),
                     alignment: Alignment.topLeft,
-                    child: Text("Password",style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold),)),
+                    child: Text("Password",style: TextStyle(color:whiteColor,fontSize:16,fontWeight: FontWeight.bold),)),
                 SizedBox(height: 10,),
                 CustomTextFormField(controller: passwordController, hintText: "Enter Your Password",isPassword: true,
                     prefix:key,validator: (p0) => "Enter your Password"),
@@ -76,7 +76,7 @@ class _SigninScreenState extends State<SigninScreen> {
                         onTap: (){
                           Get.to(()=>SignupScreen());
                         },
-                        child: Text("Sign up",style: TextStyle(color: Colors.blue,fontSize: 16),)),
+                        child: Text("Sign up",style: TextStyle(color:blueColor,fontSize: 16),)),
                   ],
                 ),
                 SizedBox(height: 80,),

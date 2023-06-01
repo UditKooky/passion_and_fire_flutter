@@ -66,7 +66,7 @@ class _CategoryState extends State<Category> {
                   child: Column(
                     children: [
                       CircleAvatar(
-                        radius: 40,backgroundColor: Colors.black,
+                        radius: 40,backgroundColor:backgroundColor,
                         child: Image.asset(heartcircle,scale: 3,),
                       ),
                       SizedBox(height: 10,),
@@ -129,7 +129,7 @@ class _CategoryState extends State<Category> {
                   height: 30,
                   width: 80,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: whiteColor),
-                  child:Center(child: Text("Trending",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),))),
+                  child:Center(child: Text("Trending",style: TextStyle(color:backgroundColor,fontSize: 16,fontWeight: FontWeight.bold),))),
               SizedBox(width: 10,),
               Container(
                   height: 30,
@@ -204,7 +204,7 @@ class _CategoryState extends State<Category> {
                           labelColor: whiteColor,
                           labelStyle: TextStyle(color:whiteColor,fontSize: 16,fontWeight: FontWeight.bold),
                           unselectedLabelColor: tabtextColor,
-                          indicatorColor: Colors.white,
+                          indicatorColor:whiteColor,
                           indicatorPadding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                           tabs: [
                             Tab(text: 'Courses',),

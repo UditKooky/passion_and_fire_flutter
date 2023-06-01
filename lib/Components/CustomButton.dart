@@ -22,7 +22,7 @@ class _CustomButtonState extends State<CustomButton> {
       decoration: BoxDecoration(
           color:whiteColor,
           borderRadius: BorderRadius.circular(widget.height==null? 30:(widget.height)/2)),
-      child: Text("${widget.texttitle}",style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
+      child: Text("${widget.texttitle}",style: TextStyle(color: backgroundColor,fontSize: 18,fontWeight: FontWeight.bold),),
     );
   }
 }

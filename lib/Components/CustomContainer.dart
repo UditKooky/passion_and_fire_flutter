@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:passion_and_fire_flutter/utils/colors.dart';
 import 'package:passion_and_fire_flutter/utils/images.dart';
 
 class CustomContainer extends StatefulWidget {
@@ -26,13 +27,13 @@ class _CustomContainerState extends State<CustomContainer> {
             transform: GradientRotation(double.maxFinite),
             end: Alignment.bottomCenter,
             colors: [
-              Colors.black.withOpacity(0.8),
-              Colors.black.withOpacity(0.3),
-              Colors.white.withOpacity(0.2)
+              backgroundColor.withOpacity(0.8),
+              backgroundColor.withOpacity(0.3),
+              whiteColor.withOpacity(0.2)
             ],)),
           child: Container(
               margin: EdgeInsets.all(15),
-              child: Text("LIFE",style: TextStyle(color: Colors.white,fontSize: 18),)),
+              child: Text("LIFE",style: TextStyle(color:whiteColor,fontSize: 18),)),
 
         ),
       ),

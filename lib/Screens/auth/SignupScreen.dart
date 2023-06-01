@@ -46,7 +46,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Container(
                 margin: EdgeInsets.only(left: 35),
                   alignment: Alignment.topLeft,
-                  child: Text("Email address",style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold),)),
+                  child: Text("Email address",style: TextStyle(color:whiteColor,fontSize:16,fontWeight: FontWeight.bold),)),
               SizedBox(height: 10,),
               CustomTextFormField(controller: emailController, hintText: "Enter Your Email Address",isPassword: false,
               prefix:email,validator: (p0) => "Enter your Email"),
@@ -54,7 +54,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Container(
                   margin: EdgeInsets.only(left: 35),
                   alignment: Alignment.topLeft,
-                  child: Text("Password",style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold),)),
+                  child: Text("Password",style: TextStyle(color:whiteColor,fontSize:16,fontWeight: FontWeight.bold),)),
               SizedBox(height: 10,),
               CustomTextFormField(controller: passwordController, hintText: "Enter Your Password",isPassword: true,
                   prefix:key,validator: (p0) => "Enter your Password",suffix:eye),
@@ -62,7 +62,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Container(
                   margin: EdgeInsets.only(left: 35),
                   alignment: Alignment.topLeft,
-                  child: Text("Confirm Password",style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold),)),
+                  child: Text("Confirm Password",style: TextStyle(color:whiteColor,fontSize:16,fontWeight: FontWeight.bold),)),
               SizedBox(height: 10,),
               CustomTextFormField(controller: confirmpasswordController, hintText: "Confirm Your Password",isPassword: true,
                   prefix:key,validator: (p0) => "Confirm Your Password",suffix:eye),
@@ -78,7 +78,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       onTap: (){
                         Get.to(()=>SigninScreen());
                       },
-                      child: Text("Sign in",style: TextStyle(color: Colors.blue,fontSize: 18),)),
+                      child: Text("Sign in",style: TextStyle(color:blueColor,fontSize: 18),)),
                 ],
               ),
               SizedBox(height: 50,),

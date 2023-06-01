@@ -52,7 +52,7 @@ class _ProfileState extends State<Profile> {
                       ),
                       Container(
                           margin: EdgeInsets.only(left: 10),
-                          child: Text("+91 9235522333",style: TextStyle(color: Colors.blue,fontSize: 12,fontWeight: FontWeight.bold),)),
+                          child: Text("+91 9235522333",style: TextStyle(color:blueColor,fontSize: 12,fontWeight: FontWeight.bold),)),
                       Row(
                         children: [
                           SizedBox(width: 10,),
@@ -63,7 +63,7 @@ class _ProfileState extends State<Profile> {
                             width: width*0.2,
                             decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(5)),
                             child: Center(
-                                child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 12,fontWeight: FontWeight.bold),)),
+                                child: Text("PLAN A",style: TextStyle(color:backgroundColor,fontSize: 12,fontWeight: FontWeight.bold),)),
                           ),
                         ],
                       ),
@@ -76,7 +76,7 @@ class _ProfileState extends State<Profile> {
             Container(
               height: height*0.08,
               width: width,
-              decoration: BoxDecoration(color: primaryColor,border: Border.all(color: Colors.black,width: 0.5)),
+              decoration: BoxDecoration(color: primaryColor,border: Border.all(color:backgroundColor,width: 0.5)),
               child: Row(
                 children: [
                   Row(
@@ -97,7 +97,7 @@ class _ProfileState extends State<Profile> {
             Container(
               height: height*0.08,
               width: width,
-              decoration: BoxDecoration(color: primaryColor,border: Border.all(color: Colors.black,width:0.5)),
+              decoration: BoxDecoration(color: primaryColor,border: Border.all(color:backgroundColor,width:0.5)),
               child: Row(
                 children: [
                   Row(
@@ -118,7 +118,7 @@ class _ProfileState extends State<Profile> {
             Container(
               height: height*0.08,
               width: width,
-              decoration: BoxDecoration(color: primaryColor,border: Border.all(color: Colors.black,width:0.5)),
+              decoration: BoxDecoration(color: primaryColor,border: Border.all(color:backgroundColor,width:0.5)),
               child: Row(
                 children: [
                   Row(
@@ -139,7 +139,7 @@ class _ProfileState extends State<Profile> {
             Container(
               height: height*0.08,
               width: width,
-              decoration: BoxDecoration(color: primaryColor,border: Border.all(color: Colors.black,width:0.5)),
+              decoration: BoxDecoration(color: primaryColor,border: Border.all(color:backgroundColor,width:0.5)),
               child: Row(
                 children: [
                   Row(
@@ -147,7 +147,7 @@ class _ProfileState extends State<Profile> {
                       SizedBox(width: 30,),
                       Image.asset(logout,scale: 1.5,),
                       SizedBox(width: 15,),
-                      Text("Logout",style: TextStyle(color: Colors.red,fontSize: 14,fontWeight: FontWeight.bold),)
+                      Text("Logout",style: TextStyle(color:redColor,fontSize: 14,fontWeight: FontWeight.bold),)
                     ],
                   ),
                   Spacer(),

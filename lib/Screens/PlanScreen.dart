@@ -61,7 +61,7 @@ class _PlanScreenState extends State<PlanScreen> {
                         width: width*0.25,
                         decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(8)),
                         child: Center(
-                            child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),)),
+                            child: Text("PLAN A",style: TextStyle(color:backgroundColor,fontSize: 16,fontWeight: FontWeight.bold),)),
                       ),
                       Container(
                           margin: EdgeInsets.only(left: 40,top: 20),
@@ -78,7 +78,7 @@ class _PlanScreenState extends State<PlanScreen> {
                 ismore==true?Container(
                   height: height*0.25,
                   width: width*0.9,
-                  decoration: BoxDecoration(color: Colors.black,
+                  decoration: BoxDecoration(color:backgroundColor,
                       borderRadius: BorderRadius.circular(15)),
                   child: Column(
                     children: [
@@ -92,7 +92,7 @@ class _PlanScreenState extends State<PlanScreen> {
                             width: width*0.25,
                             decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(8)),
                             child: Center(
-                                child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),)),
+                                child: Text("PLAN A",style: TextStyle(color:backgroundColor,fontSize: 16,fontWeight: FontWeight.bold),)),
                           ),
                           Container(
                             margin: EdgeInsets.only(left: 20,top: 20),
@@ -155,7 +155,7 @@ class _PlanScreenState extends State<PlanScreen> {
                         width: width*0.25,
                         decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(8)),
                         child: Center(
-                            child: Text("PLAN B",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),)),
+                            child: Text("PLAN B",style: TextStyle(color:backgroundColor,fontSize: 16,fontWeight: FontWeight.bold),)),
                       ),
                       Container(
                           margin: EdgeInsets.only(left: 40,top: 10),
@@ -172,7 +172,7 @@ class _PlanScreenState extends State<PlanScreen> {
                 ismore1==true?Container(
                   height: height*0.25,
                   width: width*0.9,
-                  decoration: BoxDecoration(color: Colors.black,
+                  decoration: BoxDecoration(color:backgroundColor,
                       borderRadius: BorderRadius.circular(15)),
                   child: Column(
                     children: [
@@ -186,7 +186,7 @@ class _PlanScreenState extends State<PlanScreen> {
                             width: width*0.25,
                             decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(8)),
                             child: Center(
-                                child: Text("PLAN B",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.bold),)),
+                                child: Text("PLAN B",style: TextStyle(color:backgroundColor,fontSize: 16,fontWeight: FontWeight.bold),)),
                           ),
                           Container(
                               margin: EdgeInsets.only(left: 20,top: 20),
