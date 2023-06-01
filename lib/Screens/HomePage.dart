@@ -96,10 +96,10 @@ class _HomePageState extends State<HomePage> {
                     )),
                 SizedBox(height: 10),
                 Center(child: Text("GOD LIVES IN YOU",
-                  style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),)),
+                  style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),)),
                 SizedBox(height: 5),
                 Center(child: Text("Spirituality",
-                  style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),)),
+                  style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),)),
                 SizedBox(height: 10,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

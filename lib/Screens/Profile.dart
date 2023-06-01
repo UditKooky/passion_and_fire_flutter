@@ -24,8 +24,9 @@ class _ProfileState extends State<Profile> {
         child:Column(
           children: [
             Container(
-                margin: EdgeInsets.only(top: 60,right: 220),
-                child: Text("Profile",style: TextStyle(color: whiteColor,fontSize:40,fontWeight: FontWeight.bold),)),
+              margin: EdgeInsets.only(top: 60,left: 30),
+                alignment: Alignment.centerLeft,
+                child: Text("Profile",style: TextStyle(color: whiteColor,fontSize:25,fontWeight: FontWeight.bold),)),
             SizedBox(height: 10,),
             Container(
               width: width,
@@ -34,7 +35,7 @@ class _ProfileState extends State<Profile> {
                   Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: CircleAvatar(
-                      radius: 60,backgroundColor: whiteColor,
+                      radius: 50,backgroundColor: whiteColor,
                     ),
                   ),
                   Column(
@@ -44,25 +45,25 @@ class _ProfileState extends State<Profile> {
                       Row(
                         children: [
                           SizedBox(width: 10,),
-                          Text("Ankit Bansal",style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                          Text("Ankit Bansal",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                           SizedBox(width: 10,),
                           Image.asset(edit,scale: 2,)
                         ],
                       ),
                       Container(
                           margin: EdgeInsets.only(left: 10),
-                          child: Text("+91 9235522333",style: TextStyle(color: Colors.blue,fontSize: 14,fontWeight: FontWeight.bold),)),
+                          child: Text("+91 9235522333",style: TextStyle(color: Colors.blue,fontSize: 12,fontWeight: FontWeight.bold),)),
                       Row(
                         children: [
                           SizedBox(width: 10,),
-                          Text("Active Subscription",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),),
+                          Text("Active Subscription",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),),
                           SizedBox(width: 10,),
                           Container(
                             height: height*0.025,
                             width: width*0.2,
                             decoration: BoxDecoration(color: whiteColor,borderRadius: BorderRadius.circular(5)),
                             child: Center(
-                                child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 14,fontWeight: FontWeight.bold),)),
+                                child: Text("PLAN A",style: TextStyle(color: Colors.black,fontSize: 12,fontWeight: FontWeight.bold),)),
                           ),
                         ],
                       ),
@@ -83,7 +84,7 @@ class _ProfileState extends State<Profile> {
                       SizedBox(width: 30,),
                       Image.asset(checkout,scale: 1.5,),
                       SizedBox(width: 15,),
-                      Text("My Orders",style: TextStyle(color: whiteColor,fontSize: 18,fontWeight: FontWeight.bold),)
+                      Text("My Orders",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),)
                     ],
                   ),
                   Spacer(),
@@ -104,7 +105,7 @@ class _ProfileState extends State<Profile> {
                       SizedBox(width: 30,),
                       Image.asset(checkout,scale: 1.5,),
                       SizedBox(width: 15,),
-                      Text("My Subscription",style: TextStyle(color: whiteColor,fontSize: 18,fontWeight: FontWeight.bold),)
+                      Text("My Subscription",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),)
                     ],
                   ),
                   Spacer(),
@@ -125,7 +126,7 @@ class _ProfileState extends State<Profile> {
                       SizedBox(width: 30,),
                       Image.asset(checkout,scale: 1.5,),
                       SizedBox(width: 15,),
-                      Text("Settings",style: TextStyle(color: whiteColor,fontSize: 18,fontWeight: FontWeight.bold),)
+                      Text("Settings",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),)
                     ],
                   ),
                   Spacer(),
@@ -146,7 +147,7 @@ class _ProfileState extends State<Profile> {
                       SizedBox(width: 30,),
                       Image.asset(logout,scale: 1.5,),
                       SizedBox(width: 15,),
-                      Text("Logout",style: TextStyle(color: Colors.red,fontSize: 18,fontWeight: FontWeight.bold),)
+                      Text("Logout",style: TextStyle(color: Colors.red,fontSize: 14,fontWeight: FontWeight.bold),)
                     ],
                   ),
                   Spacer(),

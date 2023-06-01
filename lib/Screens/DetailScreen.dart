@@ -20,7 +20,7 @@ class _DetailScreenState extends State<DetailScreen> {
         Container(
           margin: EdgeInsets.only(left: 15,right: 15),
           child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-              " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",style: TextStyle(color: whiteColor),),
+              " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",style: TextStyle(color: whiteColor,fontSize: 14),),
         ),
         SizedBox(height: 20,),
         Container(
@@ -32,7 +32,7 @@ class _DetailScreenState extends State<DetailScreen> {
           margin: EdgeInsets.only(left: 15,right: 15),
           child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
               "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-            style: TextStyle(color: whiteColor,fontSize: 16),),
+            style: TextStyle(color: whiteColor,fontSize: 14),),
         ),
         SizedBox(height: 20,),
         Container(
@@ -56,17 +56,17 @@ class _DetailScreenState extends State<DetailScreen> {
               Row(
                 children: [
                   Text("45:27",
-                    style: TextStyle(color: viewColor,fontSize: 30),),
+                    style: TextStyle(color: viewColor,fontSize: 20),),
                   SizedBox(width: 5,),
                   Text("Mins",
-                    style: TextStyle(color: whiteColor,fontSize: 20),),
+                    style: TextStyle(color: whiteColor,fontSize: 18),),
                 ],
               ),
               Container(
                 height: height*0.035,
                 width: width*0.3,
                 decoration: BoxDecoration(color: tabtext3Color,borderRadius: BorderRadius.circular(10)),
-                child: Center(child: Text("Intermediate",style: TextStyle(color: whiteColor,fontSize: 20),)),
+                child: Center(child: Text("Intermediate",style: TextStyle(color: whiteColor,fontSize: 16),)),
               )
             ],
           ),
@@ -74,7 +74,7 @@ class _DetailScreenState extends State<DetailScreen> {
         SizedBox(height: 20,),
         Container(
             margin: EdgeInsets.only(left: 20),
-            child: Text("More by Authorname",style: TextStyle(color: whiteColor,fontSize: 25),)),
+            child: Text("More by Authorname",style: TextStyle(color: whiteColor,fontSize: 20),)),
         Container(
           height: height*0.3,
           child: ListView.builder(
@@ -146,11 +146,11 @@ class _DetailScreenState extends State<DetailScreen> {
                   SizedBox(height: 20,),
                   Container(
                       margin: EdgeInsets.only(left:20,top: 15),
-                      width:size.width*0.7, child: Text("God lives with you",style: TextStyle(color: Colors.white,fontSize: 50,fontWeight: FontWeight.bold),)),
+                      width:size.width*0.6, child: Text("God lives within you",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),)),
                   SizedBox(height: 10,),
                   Container(
                       margin: EdgeInsets.only(left:20,top: 15),
-                      width:size.width*0.7, child: Text("\$499.00",style: TextStyle(color:viewColor,fontSize: 25,fontWeight: FontWeight.bold),)),
+                      width:size.width*0.7, child: Text("\$499.00",style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),)),
                   SizedBox(height: 10,),
                   DefaultTabController(
                       length: 3,
@@ -199,11 +199,11 @@ class _DetailScreenState extends State<DetailScreen> {
           Positioned(
               bottom: 0,
               child: Container(
-            height: height*0.1,
+            height: height*0.08,
             width: width,
             color: secondaryColor,
             child: Container(
-              margin: EdgeInsets.only(left: 20,right: 20),
+              margin: EdgeInsets.only(left: 15,right: 15),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -215,10 +215,10 @@ class _DetailScreenState extends State<DetailScreen> {
                     ],
                   ),
                   Container(
-                    height: height*0.08,
+                    height: height*0.06,
                     width: width*0.5,
                     decoration: BoxDecoration(color:whiteColor,borderRadius: BorderRadius.circular(15)),
-                    child: Center(child: Text("Buy Now",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),)),
+                    child: Center(child: Text("Buy Now",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),)),
                   )
                 ],
               ),

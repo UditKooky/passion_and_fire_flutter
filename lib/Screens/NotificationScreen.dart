@@ -26,7 +26,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                margin: EdgeInsets.only(top: 80,left: 20),
+                margin: EdgeInsets.only(top:60,left: 20),
                 child: Row(
                   children: [
                     Image.asset(arrowleft,scale: 2),
@@ -39,10 +39,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
               Container(
                 margin: EdgeInsets.only(right: 10),
                   alignment:Alignment.topRight,
-                  child: Text("TODAY",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),)),
+                  child: Text("TODAY",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),)),
               SizedBox(height: 10,),
               Container(
-                height: height*0.15,
+                height: height*0.16,
                 width: width,
                 decoration: BoxDecoration(color:primaryColor,border: Border.all(color: Colors.black,width: 0.5)),
                 child: Row(
@@ -55,16 +55,17 @@ class _NotificationScreenState extends State<NotificationScreen> {
                     ),
                     SizedBox(width: 15,),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 20,),
                         Text("Authorname just publish a new book",
-                          style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
-                        SizedBox(height: 10,),
+                          style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),),
+                        SizedBox(height: 5,),
                         Container(
                   width: width*0.6,
                   child: Text("Lorem ipsum dolor sit amet, consectetur "
                       "adipiscing elit, sed do eiusmod tempor Readmore...",
-                    style: TextStyle(color: textColor,fontSize: 16,fontWeight: FontWeight.bold),),
+                    style: TextStyle(color: textColor,fontSize: 14,fontWeight: FontWeight.bold),),
                 ),
 
 
@@ -77,10 +78,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
               Container(
                   margin: EdgeInsets.only(right: 10),
                   alignment:Alignment.topRight,
-                  child: Text("YESTERDAY",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),)),
+                  child: Text("YESTERDAY",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),)),
               SizedBox(height: 10,),
               Container(
-                height: height*0.15,
+                height: height*0.16,
                 width: width,
                 decoration: BoxDecoration(color:primaryColor,border: Border.all(color: Colors.black,width: 0.5)),
                 child: Row(
@@ -93,16 +94,17 @@ class _NotificationScreenState extends State<NotificationScreen> {
                     ),
                     SizedBox(width: 15,),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 20,),
                         Text("Authorname just publish a new book",
-                          style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
-                        SizedBox(height: 10,),
+                          style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),),
+                        SizedBox(height: 5,),
                         Container(
                           width: width*0.6,
                           child: Text("Lorem ipsum dolor sit amet, consectetur "
                               "adipiscing elit, sed do eiusmod tempor Readmore...",
-                            style: TextStyle(color: textColor,fontSize: 16,fontWeight: FontWeight.bold),),
+                            style: TextStyle(color: textColor,fontSize: 14,fontWeight: FontWeight.bold),),
                         ),
 
 
@@ -113,10 +115,11 @@ class _NotificationScreenState extends State<NotificationScreen> {
               ),
               SizedBox(height: 10,),
               Container(
-                height: height*0.15,
+                height: height*0.16,
                 width: width,
                 decoration: BoxDecoration(color:primaryColor,border: Border.all(color: Colors.black,width: 0.5)),
                 child: Row(
+
                   children: [
                     SizedBox(width: 30,),
                     Container(
@@ -126,16 +129,17 @@ class _NotificationScreenState extends State<NotificationScreen> {
                     ),
                     SizedBox(width: 15,),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 20,),
                         Text("Authorname just publish a new book",
-                          style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
-                        SizedBox(height: 10,),
+                          style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),),
+                        SizedBox(height: 5,),
                         Container(
                           width: width*0.6,
                           child: Text("Lorem ipsum dolor sit amet, consectetur "
                               "adipiscing elit, sed do eiusmod tempor Readmore...",
-                            style: TextStyle(color: textColor,fontSize: 16,fontWeight: FontWeight.bold),),
+                            style: TextStyle(color: textColor,fontSize: 14,fontWeight: FontWeight.bold),),
                         ),
 
 

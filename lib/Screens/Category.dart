@@ -66,8 +66,8 @@ class _CategoryState extends State<Category> {
                   child: Column(
                     children: [
                       CircleAvatar(
-                        radius: 45,backgroundColor: Colors.black,
-                        child: Image.asset(heartcircle,scale: 2,),
+                        radius: 40,backgroundColor: Colors.black,
+                        child: Image.asset(heartcircle,scale: 3,),
                       ),
                       SizedBox(height: 10,),
                       Text("Marriage",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),

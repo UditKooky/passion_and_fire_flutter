@@ -14,8 +14,8 @@ class _CustomContainerState extends State<CustomContainer> {
     Size size = MediaQuery.of(context).size;
     return Center(
       child: Container(
-        height: size.height*0.26,
-        width: size.width*0.40,
+        height: size.height*0.25,
+        width: size.width*0.35,
         margin: EdgeInsets.only(left: 10,right: 10),
         decoration: BoxDecoration(image: DecorationImage(image: AssetImage(author),fit: BoxFit.cover),
           borderRadius: BorderRadius.circular(20),),

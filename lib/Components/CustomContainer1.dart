@@ -15,7 +15,7 @@ class _CustomContainer1State extends State<CustomContainer1> {
     Size size = MediaQuery.of(context).size;
     return  Center(
       child: Container(
-        height: size.height*0.22,
+        height: size.height*0.2,
         width: size.width*0.65,
         margin: EdgeInsets.only(left: 10,right: 10),
         decoration: BoxDecoration(image: DecorationImage(image: AssetImage(author),fit: BoxFit.cover),
@@ -40,7 +40,7 @@ class _CustomContainer1State extends State<CustomContainer1> {
                       children: [
                         Container(
                             margin: EdgeInsets.only(right:35,top: 15),
-                            width:size.width*0.18, child: Text("GOD LIVES IN YOU!",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),)),
+                            width:size.width*0.18, child: Text("GOD LIVES IN YOU!",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),)),
                         Container(
                             margin: EdgeInsets.only(left: 15,top: 15),
                             width:size.width*0.3, child: Text("JOYCE HEYER",style: TextStyle(color: Colors.white,fontSize: 12,fontWeight: FontWeight.bold),)),
@@ -61,7 +61,7 @@ class _CustomContainer1State extends State<CustomContainer1> {
 
                 ),
                 Container(
-                  margin: EdgeInsets.only(right: 10,top: 30),
+                  margin: EdgeInsets.only(right: 10,top: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.center,
