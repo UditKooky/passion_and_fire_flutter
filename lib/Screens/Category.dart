@@ -191,7 +191,7 @@ class _CategoryState extends State<Category> {
         child: Column(
           children: [
             SizedBox(height: 60,),
-            CustomTextFormField(controller: searchController, hintText: 'Trust God Completely',isPassword: false,prefix: search,),
+            CustomTextFormField(controller: searchController, hintText: 'Trust God Completely',isPassword: false,prefix: search, title: '',),
             SizedBox(height: 20,),
             DefaultTabController(
                 length: 2,

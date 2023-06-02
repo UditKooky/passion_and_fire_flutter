@@ -31,11 +31,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             Image.asset(mainLogo,scale: 2.5,),
             Spacer(),
             Image.asset(mainLogo,scale:4.5,),
-            SizedBox(height: 15,),
+            SizedBox(height: 30,),
             Container(
               margin: EdgeInsets.only(left: 10),
               height: height*0.06,
-              width: width*0.65,
+              width: width*0.8,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),border: Border.all(color:whiteColor,width: 2) ),
               child: Row(
@@ -47,25 +47,25 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       onTap: (){
                         Get.to(()=>SignupScreen());
                       },
-                      child: Center(child: Text("Sign up with email",style: TextStyle(color: whiteColor,fontSize: 18),))),
+                      child: Center(child: Text("Sign up with email",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
                   SizedBox(),
                 ],
               ),
             ),
-            SizedBox(height: 15,),
+            SizedBox(height: 30,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text("have an account? ",style: TextStyle(color: whiteColor,fontSize: 16),),
+                Text("have an account? ",style: TextStyle(color: whiteColor,fontSize: 14),),
                 GestureDetector(
                     onTap: (){
                       Get.to(()=>SigninScreen());
                     },
-                    child: Text("Sign in",style: TextStyle(color:blueColor,fontSize: 16),)),
+                    child: Text("Sign in",style: TextStyle(color:blueColor,fontSize: 14),)),
               ],
             ),
-            SizedBox(height: 30,),
+            SizedBox(height: 40,),
           ],
         ),
       ),

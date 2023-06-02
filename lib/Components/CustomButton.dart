@@ -16,13 +16,13 @@ class _CustomButtonState extends State<CustomButton> {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(left: 20,right: 20),
-      height:widget.height==null? 50:widget.height,
+      height:widget.height==null? 60:widget.height,
       width:widget.width==null? 80:widget.width,
       alignment: Alignment.center,
       decoration: BoxDecoration(
           color:whiteColor,
           borderRadius: BorderRadius.circular(widget.height==null? 30:(widget.height)/2)),
-      child: Text("${widget.texttitle}",style: TextStyle(color: backgroundColor,fontSize: 18,fontWeight: FontWeight.bold),),
+      child: Text("${widget.texttitle}",style: TextStyle(color: backgroundColor,fontSize: 16,fontWeight: FontWeight.bold),),
     );
   }
 }

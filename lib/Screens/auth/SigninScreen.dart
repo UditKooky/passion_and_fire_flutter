@@ -37,29 +37,25 @@ class _SigninScreenState extends State<SigninScreen> {
                 Image.asset(mainLogo,scale: 2.5,),
                 Spacer(),
                 Text("SIGN IN",style: TextStyle(color:whiteColor,
-                    fontSize: 25,fontWeight: FontWeight.bold),),
+                    fontSize: 18,fontWeight: FontWeight.bold),),
+
                 Container(
                   margin: EdgeInsets.only(top: 5),
-                  height: height*0.002,
+                  height: height*0.001,
                   width: width*0.35,
                   color: whiteColor,
                 ),
-                Spacer(),
-                Container(
-                    margin: EdgeInsets.only(left: 35),
-                    alignment: Alignment.topLeft,
-                    child: Text("Email address",style: TextStyle(color:whiteColor,fontSize:16,fontWeight: FontWeight.bold),)),
-                SizedBox(height: 10,),
-                CustomTextFormField(controller: emailController, hintText: "Enter Your Email Address",isPassword: false,
+                SizedBox(height: 50,),
+                // Spacer(),
+
+                // SizedBox(height: 10,),
+                CustomTextFormField(title:"Email address",
+                    controller: emailController, hintText: "Enter Your Email Address",isPassword: false,
                     prefix:email,validator: (p0) => "Enter your Email"),
-                SizedBox(height: 20,),
-                Container(
-                    margin: EdgeInsets.only(left: 35),
-                    alignment: Alignment.topLeft,
-                    child: Text("Password",style: TextStyle(color:whiteColor,fontSize:16,fontWeight: FontWeight.bold),)),
                 SizedBox(height: 10,),
+
                 CustomTextFormField(controller: passwordController, hintText: "Enter Your Password",isPassword: true,
-                    prefix:key,validator: (p0) => "Enter your Password"),
+                    prefix:key,validator: (p0) => "Enter your Password", title: 'Password',),
                 SizedBox(height: 80,),
                 GestureDetector(
                     onTap: (){
@@ -71,15 +67,15 @@ class _SigninScreenState extends State<SigninScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text("D'nt have an account? ",style: TextStyle(color: whiteColor,fontSize: 16),),
+                    Text("Don't have an account? ",style: TextStyle(color: whiteColor,fontSize: 14),),
                     GestureDetector(
                         onTap: (){
                           Get.to(()=>SignupScreen());
                         },
-                        child: Text("Sign up",style: TextStyle(color:blueColor,fontSize: 16),)),
+                        child: Text("Sign up",style: TextStyle(color:blueColor,fontSize: 14),)),
                   ],
                 ),
-                SizedBox(height: 80,),
+                SizedBox(height: 50,),
               ],
             )
         ),
