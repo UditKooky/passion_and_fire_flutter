@@ -39,7 +39,7 @@ class _BottomBarState extends State<BottomBar> {
       bottomNavigationBar: BottomAppBar(
         color:bottomColor,
         shape: CircularNotchedRectangle(),
-        notchMargin: 10,
+        // notchMargin: 10,
         child: Container(
           margin: EdgeInsets.only(left: 5,right: 5),
           height: 60,
@@ -47,6 +47,7 @@ class _BottomBarState extends State<BottomBar> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               MaterialButton(
+                minWidth: 60,
                 onPressed: () {
                   setState(() {
                     currentScreen =
@@ -58,9 +59,9 @@ class _BottomBarState extends State<BottomBar> {
                   children: <Widget>[
                     currentTab  == 0 ?Container(
                       height: 2,
-                      width: 80,
+                      width: 40,
                       color:whiteColor,
-                    ):Container(),
+                    ):Container(  height: 2,   width: 40,),
                     SizedBox(height: 18,),
                     Image.asset(home,height: 20,width: 20,
                       color: currentTab  == 0 ? whiteColor:greyColor1,
@@ -69,7 +70,7 @@ class _BottomBarState extends State<BottomBar> {
                 ),
               ),
               MaterialButton(
-                minWidth: 40,
+                minWidth: 60,
                 onPressed: () {
                   setState(() {
                     currentScreen =
@@ -81,10 +82,10 @@ class _BottomBarState extends State<BottomBar> {
                   children: <Widget>[
                     currentTab  == 1 ?Container(
                       height: 2,
-                      width: 80,
+                      width: 40,
                       color:whiteColor,
-                    ):Container(),
-                    SizedBox(height: 18,),
+                    ):Container(  height: 2,),
+                    SizedBox(height: 18,   width: 40,),
                     Image.asset(category,height: 20,width: 20,
                       color: currentTab  == 1 ? whiteColor:greyColor1,
                     ),
@@ -92,7 +93,7 @@ class _BottomBarState extends State<BottomBar> {
                 ),
               ),
               MaterialButton(
-                minWidth: 40,
+                minWidth: 60,
                 onPressed: () {
                   setState(() {
                     currentScreen =
@@ -104,9 +105,9 @@ class _BottomBarState extends State<BottomBar> {
                   children: <Widget>[
                     currentTab  == 2 ?Container(
                       height: 2,
-                      width: 80,
+                      width: 40,
                       color:whiteColor,
-                    ):Container(),
+                    ):Container(  height: 2,   width: 40,),
                     SizedBox(height: 18,),
                     Image.asset(star,height: 20,width: 20,
                       color: currentTab  == 2 ? whiteColor:greyColor1,
@@ -115,7 +116,7 @@ class _BottomBarState extends State<BottomBar> {
                 ),
               ),
               MaterialButton(
-                minWidth: 40,
+                minWidth: 60,
                 onPressed: () {
                   setState(() {
                     currentScreen =
@@ -127,9 +128,9 @@ class _BottomBarState extends State<BottomBar> {
                   children: <Widget>[
                     currentTab  == 3 ?Container(
                       height: 2,
-                      width: 80,
+                      width: 40,
                       color:whiteColor,
-                    ):Container(),
+                    ):Container(  height: 2,   width: 40,),
                     SizedBox(height: 18,),
                     Image.asset(profile,height: 20,width: 20,
                       color: currentTab  == 3 ? whiteColor:greyColor1,

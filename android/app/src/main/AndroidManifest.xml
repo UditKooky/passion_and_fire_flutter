@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.passion_and_fire.flutter">
    <application
-        android:label="passion_and_fire_flutter"
+        android:label="Passion and Fire"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

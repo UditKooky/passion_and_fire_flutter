@@ -19,17 +19,14 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2),() {
-
-    },);
-    getroute();
-
+    Future.delayed(Duration(seconds: 4), () {
+      Get.offAll(()=>OnboardingScreen(),transition:Transition.fadeIn,duration: Duration(seconds: 1,) );
+    });
   }
-
-  getroute(){
-    Timer(Duration(seconds: 5),
-            ()=> Get.offAll(()=>OnboardingScreen(),transition: Transition.fadeIn,duration: Duration(milliseconds: 500)));
-  }
+  // getroute(){
+  //   Timer(Duration(seconds: 5),
+  //           ()=> Get.off(()=>OnboardingScreen(),transition: Transition.fadeIn,duration: Duration(milliseconds: 300)));
+  // }
   @override
   Widget build(BuildContext context) {
      size = MediaQuery.of(context).size;

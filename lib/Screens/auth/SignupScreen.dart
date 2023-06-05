@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:passion_and_fire_flutter/Components/CustomButton.dart';
 import 'package:passion_and_fire_flutter/Components/CustomTextFormField.dart';
+import 'package:passion_and_fire_flutter/Screens/PlanScreen.dart';
 import 'package:passion_and_fire_flutter/Screens/auth/SigninScreen.dart';
 import 'package:passion_and_fire_flutter/utils/colors.dart';
 import 'package:passion_and_fire_flutter/utils/images.dart';
@@ -52,7 +53,11 @@ class _SignupScreenState extends State<SignupScreen> {
               CustomTextFormField(controller: confirmpasswordController, hintText: "Confirm Your Password",isPassword: true,
                   prefix:key,validator: (p0) => "Confirm Your Password",suffix:eye, title: 'Confirm Password',),
               SizedBox(height: 60,),
-              CustomButton(texttitle: "Sign up",height: height*0.055,width: width*0.85,),
+              GestureDetector(git
+                  onTap: (){
+                    Get.to(()=>PlanScreen(),transition: Transition.fadeIn,duration: Duration(seconds: 1,));
+                  },
+                  child: CustomButton(texttitle: "Sign up",height: height*0.055,width: width*0.85,)),
               SizedBox(height: 20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -61,7 +66,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   Text("have an account?",style: TextStyle(color: whiteColor,fontSize: 14),),
                   GestureDetector(
                       onTap: (){
-                        Get.to(()=>SigninScreen());
+                        Get.off(()=>SigninScreen(),transition: Transition.fadeIn,duration: Duration(seconds: 1,));
                       },
                       child: Text("Sign in",style: TextStyle(color:blueColor,fontSize: 14),)),
                 ],

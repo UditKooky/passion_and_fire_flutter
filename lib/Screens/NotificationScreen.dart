@@ -31,7 +31,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   children: [
                     Image.asset(arrowleft,scale: 2),
                     SizedBox(width: 15,),
-                    Text("Notifications",style: TextStyle(color: whiteColor,fontSize:25,fontWeight: FontWeight.bold),)
+                    Text("Notifications",style: TextStyle(color: whiteColor,fontSize:18,fontWeight: FontWeight.bold),)
                   ],
                 ),
               ),
@@ -47,7 +47,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                 decoration: BoxDecoration(color:primaryColor,border: Border.all(color: Colors.black,width: 0.5)),
                 child: Row(
                   children: [
-                    SizedBox(width: 30,),
+                    SizedBox(width: 15,),
                     Container(
                       height: 60,
                       width: 40,
@@ -86,7 +86,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                 decoration: BoxDecoration(color:primaryColor,border: Border.all(color:backgroundColor,width: 0.5)),
                 child: Row(
                   children: [
-                    SizedBox(width: 30,),
+                    SizedBox(width: 15,),
                     Container(
                       height: 60,
                       width: 40,
@@ -120,7 +120,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                 decoration: BoxDecoration(color:primaryColor,border: Border.all(color:backgroundColor,width: 0.5)),
                 child: Row(
                   children: [
-                    SizedBox(width: 30,),
+                    SizedBox(width: 15,),
                     Container(
                       height: 60,
                       width: 40,

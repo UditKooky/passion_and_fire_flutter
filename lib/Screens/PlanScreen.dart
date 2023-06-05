@@ -130,7 +130,7 @@ class _PlanScreenState extends State<PlanScreen> {
                 Spacer(),
                 GestureDetector(
                     onTap: (){
-                      Get.to(()=>BottomBar());
+                      Get.to(()=>BottomBar(),transition: Transition.fadeIn,duration: Duration(seconds: 1,));
                     },
                     child: CustomButton(texttitle: "Subscribe",height: height*0.06,width: width*0.85,)),
                 SizedBox(height: 50,),

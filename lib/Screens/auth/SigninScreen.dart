@@ -59,7 +59,7 @@ class _SigninScreenState extends State<SigninScreen> {
                 SizedBox(height: 80,),
                 GestureDetector(
                     onTap: (){
-                      Get.to(()=>PlanScreen());
+                      Get.to(()=>PlanScreen(),transition: Transition.fadeIn,duration: Duration(seconds: 1,));
                     },
                     child: CustomButton(texttitle: "Sign in",height: height*0.055,width: width*0.85,)),
                 SizedBox(height: 20,),
@@ -70,7 +70,7 @@ class _SigninScreenState extends State<SigninScreen> {
                     Text("Don't have an account? ",style: TextStyle(color: whiteColor,fontSize: 14),),
                     GestureDetector(
                         onTap: (){
-                          Get.to(()=>SignupScreen());
+                          Get.off(()=>SignupScreen(),transition: Transition.fadeIn,duration: Duration(seconds: 1,));
                         },
                         child: Text("Sign up",style: TextStyle(color:blueColor,fontSize: 14),)),
                   ],

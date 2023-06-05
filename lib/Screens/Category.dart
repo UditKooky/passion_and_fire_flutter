@@ -41,19 +41,19 @@ class _CategoryState extends State<Category> {
               Container(
                 margin: EdgeInsets.only(left: 20),
                 child: Text("Topics",
-                  style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),),
+                  style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
               ),
               Container(
                 margin: EdgeInsets.only(right: 20),
                 child: Text("More",
-                  style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                  style: TextStyle(color:viewColor,fontSize: 14,fontWeight: FontWeight.bold),),
               ),
             ],
           ),
         ),
         SizedBox(height: 5,),
         Container(
-          height: height*0.2,
+          height: height*0.18,
           color: tabtext1Color,
           child: ListView.builder(
               itemCount: 6,
@@ -66,11 +66,11 @@ class _CategoryState extends State<Category> {
                   child: Column(
                     children: [
                       CircleAvatar(
-                        radius: 40,backgroundColor:backgroundColor,
+                        radius: 30,backgroundColor:backgroundColor,
                         child: Image.asset(heartcircle,scale: 3,),
                       ),
                       SizedBox(height: 10,),
-                      Text("Marriage",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
+                      Text("Marriage",style: TextStyle(color: whiteColor,fontSize: 14,),),
 
                     ],
                   ),
@@ -88,12 +88,12 @@ class _CategoryState extends State<Category> {
               Container(
                 margin: EdgeInsets.only(left: 20),
                 child: Text("Favourites",
-                  style: TextStyle(color: whiteColor,fontSize: 25,fontWeight: FontWeight.bold),),
+                  style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
               ),
               Container(
                 margin: EdgeInsets.only(right: 20),
                 child: Text("More",
-                  style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                  style: TextStyle(color:viewColor,fontSize: 14,fontWeight: FontWeight.bold),),
               ),
             ],
           ),
@@ -129,52 +129,54 @@ class _CategoryState extends State<Category> {
                   height: 30,
                   width: 80,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: whiteColor),
-                  child:Center(child: Text("Trending",style: TextStyle(color:backgroundColor,fontSize: 16,fontWeight: FontWeight.bold),))),
+                  child:Center(child: Text("Trending",style: TextStyle(color:backgroundColor,fontSize: 14,),))),
               SizedBox(width: 10,),
               Container(
                   height: 30,
                   width: 80,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: tabtext2Color),
-                  child:Center(child: Text("Latest",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
+                  child:Center(child: Text("Latest",style: TextStyle(color: whiteColor,fontSize: 14,),))),
               SizedBox(width: 10,),
               Container(
                   height: 30,
                   width: 80,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: tabtext2Color),
-                  child:Center(child: Text("For you",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
+                  child:Center(child: Text("For you",style: TextStyle(color: whiteColor,fontSize: 14,),))),
               SizedBox(width: 10,),
               Container(
                   height: 30,
                   width: 80,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: tabtext2Color),
-                  child:Center(child: Text("More",style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),))),
+                  child:Center(child: Text("More",style: TextStyle(color: whiteColor,fontSize: 14,),))),
             ],
           ),
         ),
         SizedBox(height: 20,),
         Container(
-          height: height*0.22,
+          height: height*0.25,
+          margin: EdgeInsets.only(right: 5),
           child: ListView.builder(
               itemCount: 3,
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context,index){
-                return Container(
-                  height: height*0.25,
-                  child: ListView.builder(
-                      itemCount: 6,
-                      shrinkWrap: true,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context,index){
-                        return BooksContainer();
-                      }),
-                );
+                return BooksContainer();
               }),
         ),
+        // Container(
+        //   height: height*0.22,
+        //   child: ListView.builder(
+        //       itemCount: 3,
+        //       shrinkWrap: true,
+        //       scrollDirection: Axis.horizontal,
+        //       itemBuilder: (context,index){
+        //         return
+        //       }),
+        // ),
         SizedBox(height: 10,),
         Container(
             margin: EdgeInsets.only(left: 20),
-            child: Text("Recent",style: TextStyle(color: whiteColor,fontSize:25,fontWeight: FontWeight.bold),)),
+            child: Text("Recent",style: TextStyle(color: whiteColor,fontSize:16,fontWeight: FontWeight.bold),)),
         SizedBox(height: 10,),
         BooksContainer(),
       ],

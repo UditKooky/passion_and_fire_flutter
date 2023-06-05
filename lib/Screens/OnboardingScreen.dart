@@ -45,7 +45,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   Image.asset(email,scale: 5,),
                   GestureDetector(
                       onTap: (){
-                        Get.to(()=>SignupScreen());
+                        Get.to(()=>SignupScreen(),transition: Transition.fadeIn,duration: Duration(seconds: 1,));
                       },
                       child: Center(child: Text("Sign up with email",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
                   SizedBox(),
@@ -60,7 +60,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 Text("have an account? ",style: TextStyle(color: whiteColor,fontSize: 14),),
                 GestureDetector(
                     onTap: (){
-                      Get.to(()=>SigninScreen());
+                      Get.to(()=>SigninScreen(),transition: Transition.fadeIn,duration:Duration(seconds: 1,));
                     },
                     child: Text("Sign in",style: TextStyle(color:blueColor,fontSize: 14),)),
               ],

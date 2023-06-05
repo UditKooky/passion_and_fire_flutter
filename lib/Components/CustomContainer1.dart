@@ -15,7 +15,7 @@ class _CustomContainer1State extends State<CustomContainer1> {
     Size size = MediaQuery.of(context).size;
     return  Center(
       child: Container(
-        height: size.height*0.2,
+        height: size.height*0.22,
         width: size.width*0.65,
         margin: EdgeInsets.only(left: 10,right: 10),
         decoration: BoxDecoration(image: DecorationImage(image: AssetImage(author),fit: BoxFit.cover),
@@ -27,8 +27,9 @@ class _CustomContainer1State extends State<CustomContainer1> {
             end: Alignment.bottomCenter,
             colors: [
               backgroundColor.withOpacity(0.8),
-              backgroundColor.withOpacity(0.3),
-              whiteColor.withOpacity(0.2)
+              backgroundColor.withOpacity(0.6),
+              backgroundColor.withOpacity(0.2),
+              whiteColor.withOpacity(0.1)
             ],)),
           child: Column(
               children:[
@@ -37,12 +38,14 @@ class _CustomContainer1State extends State<CustomContainer1> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                            margin: EdgeInsets.only(right:35,top: 15),
-                            width:size.width*0.18, child: Text("GOD LIVES IN YOU!",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),)),
+                            margin: EdgeInsets.only(top: 15),
+                            width:size.width*0.3, child: Text("GOD LIVES IN YOU!",style: TextStyle(color:whiteColor,fontSize: 16,fontWeight: FontWeight.bold),)),
+                        SizedBox(height: 25,),
                         Container(
-                            margin: EdgeInsets.only(left: 15,top: 15),
+                            margin: EdgeInsets.only(left: 15,bottom: 15),
                             width:size.width*0.3, child: Text("JOYCE HEYER",style: TextStyle(color:whiteColor,fontSize: 12,fontWeight: FontWeight.bold),)),
                       ],
                     ),
@@ -66,8 +69,8 @@ class _CustomContainer1State extends State<CustomContainer1> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text("34:52",style: TextStyle(color:whiteColor,fontSize: 18,fontWeight: FontWeight.bold),),
-                      SizedBox(width: 10,),
+                      Text("34:52",style: TextStyle(color:whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
+                      SizedBox(width: 5,),
                       Image.asset(music,scale: 5,),
                     ],
                   ),

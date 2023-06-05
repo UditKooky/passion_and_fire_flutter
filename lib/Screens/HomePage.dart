@@ -45,37 +45,34 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 SizedBox(height: 30),
-                Container(
-                  width: width*1,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                          height: height*0.04,
-                          width: width*0.2,
-                        decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
-                          child:Center(child: Text("Trending",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
-                      SizedBox(width: 8,),
-                      Container(
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
                         height: height*0.04,
                         width: width*0.2,
-                        decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
-                          child:Center(child: Text("Latest",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
-                      SizedBox(width: 8,),
-                      Container(
-                          height: height*0.04,
-                          width: width*0.2,
-                        decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
-                          child:Center(child: Text("For you",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
-                      SizedBox(width: 8,),
-                      Container(
-                          height: height*0.04,
-                          width: width*0.2,
-                        decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
-                          child:Center(child: Text("More",style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),))),
-                    ],
-                  ),
+                      decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
+                        child:Center(child: Text("Trending",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),))),
+                    SizedBox(width: 8,),
+                    Container(
+                      height: height*0.04,
+                      width: width*0.2,
+                      decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
+                        child:Center(child: Text("Latest",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),))),
+                    SizedBox(width: 8,),
+                    Container(
+                        height: height*0.04,
+                        width: width*0.2,
+                      decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
+                        child:Center(child: Text("For you",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),))),
+                    SizedBox(width: 8,),
+                    Container(
+                        height: height*0.04,
+                        width: width*0.2,
+                      decoration: BoxDecoration(border: Border.all(color: whiteColor),borderRadius: BorderRadius.circular(15)),
+                        child:Center(child: Text("More",style: TextStyle(color: whiteColor,fontSize: 12,fontWeight: FontWeight.bold),))),
+                  ],
                 ),
                 SizedBox(height: height*0.35,),
                 Container(
@@ -91,26 +88,26 @@ class _HomePageState extends State<HomePage> {
                           decoration: BoxDecoration(color: primaryColor,borderRadius: BorderRadius.circular(20)),
                         ),
                         SizedBox(width: 5,),
-                        Center(child: Text("LATEST",style: TextStyle(color: primaryColor,fontSize: 14,fontWeight: FontWeight.bold),)),
+                        Center(child: Text("LATEST",style: TextStyle(color: primaryColor,fontSize: 12,fontWeight: FontWeight.bold),)),
                       ],
                     )),
-                SizedBox(height: 10),
+                SizedBox(height: 15),
                 Center(child: Text("GOD LIVES IN YOU",
-                  style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),)),
-                SizedBox(height: 5),
+                  style: TextStyle(color: whiteColor,fontSize: 18,fontWeight: FontWeight.bold),)),
+                SizedBox(height: 10),
                 Center(child: Text("Spirituality",
-                  style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),)),
-                SizedBox(height: 10,),
+                  style: TextStyle(color: whiteColor,fontSize: 14,fontWeight: FontWeight.bold),)),
+                SizedBox(height: 15,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Image.asset(menu,scale: 2,),
-                    Image.asset(music,scale: 2,),
-                    Image.asset(heart,scale: 2,),
+                    Image.asset(menu,scale: 3,),
+                    Image.asset(music,scale: 3,),
+                    Image.asset(heart,scale: 3,),
                   ],
                 ),
-                SizedBox(height: 10,),
+                SizedBox(height: 15,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -118,12 +115,12 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(left: 20),
                       child: Text("For You",
-                        style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       child: Text("More",
-                        style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color:viewColor,fontSize: 14,fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
@@ -145,12 +142,12 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(left: 20),
                       child: Text("Categories",
-                        style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                     ),
                     Container(
-                      margin: EdgeInsets.only(right: 20),
+                      margin: EdgeInsets.only(right: 15),
                       child: Text("More",
-                        style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color:viewColor,fontSize: 14,fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
@@ -164,7 +161,7 @@ class _HomePageState extends State<HomePage> {
                       itemBuilder: (context,index){
                     return GestureDetector(
                       onTap: (){
-                        Get.to(()=>DetailScreen());
+                        Get.to(()=>DetailScreen(),transition: Transition.fadeIn,duration: Duration(seconds: 1,));
                       },
                       child: CustomContainer(
                       ),
@@ -179,18 +176,19 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(left: 20),
                       child: Text("books",
-                        style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       child: Text("More",
-                        style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color:viewColor,fontSize: 14,fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
                 SizedBox(height: 20,),
                 Container(
                   height: height*0.25,
+                  margin: EdgeInsets.only(right: 5),
                   child: ListView.builder(
                       itemCount: 3,
                       shrinkWrap: true,
@@ -207,30 +205,31 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       margin: EdgeInsets.only(left: 20),
                       child: Text("Topics",
-                        style: TextStyle(color: whiteColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color: whiteColor,fontSize: 16,fontWeight: FontWeight.bold),),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       child: Text("More",
-                        style: TextStyle(color:viewColor,fontSize: 20,fontWeight: FontWeight.bold),),
+                        style: TextStyle(color:viewColor,fontSize: 14,fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
                 SizedBox(height: 20,),
                 Container(
-                  height: height*0.2,
+                  margin: EdgeInsets.only(right: 10),
+                  height: height*0.18,
                   child: ListView.builder(
                       itemCount: 6,
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context,index){
                         return Container(
-                          width: width*0.25,
+                          margin: EdgeInsets.only(left: 10,),
                           child: Column(
                             children: [
                               Container(
-                                height: 80,
-                                width: 80,
+                                height: 70,
+                                width: 70,
                                 decoration: BoxDecoration(color:whiteColor,borderRadius: BorderRadius.circular(40),
                                   image: DecorationImage(image: AssetImage(author),fit: BoxFit.cover),),
                               ),
